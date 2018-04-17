@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.leyi.view.fragment.fragment_touzi.ProjectDetilsFragment">
+    <View
+        android:layout_width="match_parent"
+        android:background="#f3f3f3"
+        android:layout_height="5dp"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#fff"
+            android:padding="10dp" android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff7830"
+                    android:text="I"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:paddingLeft="5dp"
+                    android:id="@+id/hukuan_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff7830"
+                    android:text="借款合同"
+                    android:textSize="16sp"
+                    />
+
+            </LinearLayout>
+
+
+            <android.support.v4.view.ViewPager
+                android:layout_gravity="center"
+                android:id="@+id/hetong_banner"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+            </android.support.v4.view.ViewPager>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="bottom"
+                    android:id="@+id/lin"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp">
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#f3f3f3"
+        android:layout_height="5dp"/>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#fff"
+            android:padding="10dp" android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff7830"
+                    android:text="I"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:paddingLeft="5dp"
+                    android:id="@+id/hukuan_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff7830"
+                    android:text="借款描述"
+                    android:textSize="16sp"
+                    />
+
+            </LinearLayout>
+
+
+        <TextView
+
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+
+            android:id="@+id/jiekuang_miaoshu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

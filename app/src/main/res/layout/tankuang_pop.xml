@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90000000"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:background="#FFF"
+        android:id="@+id/rg_shop_store_pop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_storefront"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="20px"
+            android:gravity="center"
+            android:text="按年利率由高至低"
+            android:textColor="@drawable/textcolor"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rb_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="按投资期限由短至长"
+            android:textColor="@drawable/textcolor"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rb_history"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="20px"
+            android:text="按起投金额由小至大"
+            android:textColor="@drawable/textcolor"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

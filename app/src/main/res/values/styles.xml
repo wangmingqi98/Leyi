@@ -1,0 +1,290 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+
+
+    </style>
+    <!-- 沉浸式4 -->
+    <style name="App.Theme.Transparent" parent="@style/AppBaseTheme">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="NoBackDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+
+    <!-- 首页 -->
+    <style name="TabBtn">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+
+        <item name="android:button">@null</item>
+        <item name="android:background">@null</item>
+
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">-15dp</item>
+
+    </style>
+
+    <!--<style name="CustomCheckBoxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">-->
+        <!--<item name="android:button">@drawable/checkbox_selector</item>-->
+    <!--</style>-->
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <!-- 筛选 动画 -->
+    <style name="AnimBottoms" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/screen_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/screen_bottom_out</item>
+    </style>
+
+    <!-- popupwindow 动画 -->
+    <style name="Animation">
+        <item name="android:windowEnterAnimation">@anim/popenter_anim</item>
+        <item name="android:windowExitAnimation">@anim/popout_anim</item>
+    </style>
+
+    <style name="CityPicker.NoActionBar" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="LetterIndexTextViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">@dimen/side_letter_bar_width</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/cp_gray</item>
+        <item name="android:background">#F3F3F3</item>
+    </style>
+
+    <style name="AppBaseTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppBaseTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CalendarCell">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <!-- <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item> -->
+    </style>
+
+    <style name="CalendarCell.CalendarDate">
+        <item name="android:textSize">@dimen/calendar_text_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- 日历主题 -->
+    <style name="CalendarTitle">
+        <item name="android:textSize">@dimen/calendar_text_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CalendarCell.DayHeader">
+        <item name="android:textSize">@dimen/calendar_text_small</item>
+    </style>
+
+    <style name="tablayoutIcon" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+
+    </style>
+
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:minHeight">12dip</item>
+        <item name="android:maxHeight">12dip</item>
+
+    </style>
+
+    <style name="popupwindow_anim_style">
+
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowEnterAnimation">@anim/show_from_bottom</item>
+        <!-- 指定消失的动画xml -->
+        <item name="android:windowExitAnimation">@anim/hide_to_bottom</item>
+    </style>
+    <!--&lt;!&ndash; SuperCheckbox的样式 &ndash;&gt;-->
+    <!--<style name="SuperCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">-->
+        <!--<item name="android:button">@drawable/selector_item_checked</item>-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash;保险活动CheckBox&ndash;&gt;-->
+    <!--<style name="InsuranceWonderfulCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">-->
+        <!--<item name="android:button">@drawable/insurance_wonderful_checkbox</item>-->
+    <!--</style>-->
+
+
+    <style name="ImagePickerTheme" parent="AppTheme">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ImagePickerThemeFullScreen" parent="ImagePickerTheme">
+        <item name="android:fitsSystemWindows">false</item>
+
+    </style>
+
+
+    <style name="GridPasswordView" />
+
+    <style name="GridPasswordView.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="GridPasswordView.EditText" parent="GridPasswordView.TextView">
+        <item name="android:cursorVisible">false</item>
+    </style>
+
+    <style name="GridPasswordView.Divider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+
+    <style name="ShopItemTabTextApp" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="CustomCheckBoxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+    </style>
+
+    <!--setting页面每个item的textView-->
+    <style name="item_textView">
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">15dip</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+
+    <!--包含每个标题view-->
+    <style name="view_title_container">
+        <item name="android:background">@color/Black</item>
+        <!--<item name="android:background">@drawable/main_topbg</item>-->
+        <!--<item name="android:orientation">horizontal</item>-->
+        <!--<item name="android:gravity">center_vertical</item>-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">66dp</item>
+    </style>
+
+
+
+    <!--显示标题的textView-->
+    <style name="textView_title">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--显示标题的textView-->
+    <style name="textView_sub_title">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+
+    <style name="imageView_ofBackTitle">
+        <item name="android:src">@drawable/mini_webview_back</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <!--<item name="android:layout_weight">2</item>-->
+    </style>
+
+    <!--标题左侧的文本-->
+    <style name="textView_ofLeftTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!--标题右侧侧的文本-->
+    <style name="textView_ofRightTitle" parent="textView_ofLeftTitle">
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginRight">10dip</item>
+        <item name="android:layout_alignParentLeft">false</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!-- 设置联系人中的信息的textView -->
+    <style name="textView_contactInfo">
+        <item name="android:layout_width">197dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <!--按钮文本风格-->
+    <style name="button_Text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <!--“详情”按钮风格-->
+    <style name="button_details" parent="button_Text">
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:text">详情</item>
+    </style>
+
+</resources>

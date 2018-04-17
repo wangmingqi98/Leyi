@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="#fff" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/limt_bankimg"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/bank"/>
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/limt_bankname"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="wrap_content"
+        android:text="中信银行"
+        android:textColor="#666666"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/limt_bankcontent"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:text="单笔10万元，单日40万(限5笔交易)，单月100万"
+        android:textColor="#666666"
+        android:textSize="14sp"/>
+</LinearLayout>

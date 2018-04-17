@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    tools:context="com.leyi.view.activity.HelpActivity">
+
+    <RelativeLayout
+        android:id="@+id/title_zixun"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="#ff7830">
+
+        <ImageView
+            android:id="@+id/zhuce_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/zuo_bai"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="帮助中心"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ieMainBottom"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioGroup
+            android:id="@+id/tabGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+
+                android:id="@+id/rbTab1"
+                style="@style/TabBtn"
+                android:checked="true"
+                android:drawableTop="@drawable/help_one"
+
+                />
+
+            <RadioButton
+                android:id="@+id/rbTab2"
+                style="@style/TabBtn"
+                android:drawableTop="@drawable/help_two"
+                />
+
+            <RadioButton
+                android:id="@+id/rbTab3"
+                style="@style/TabBtn"
+                android:drawableTop="@drawable/help_three"
+                />
+
+            <RadioButton
+                android:id="@+id/rbTab4"
+                style="@style/TabBtn"
+                android:checked="false"
+                android:drawableTop="@drawable/help_four"
+                />
+            <RadioButton
+                android:id="@+id/rbTab5"
+                style="@style/TabBtn"
+                android:checked="false"
+                android:drawableTop="@drawable/help_five"
+                />
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/flHomeContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/xian"
+        android:background="#f3f3f3"
+        >
+    </FrameLayout>
+
+</LinearLayout>

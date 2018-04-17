@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="id_tag_autolayout_size" type="id"></item>
+    <item name="id_tag_autolayout_padding" type="id"></item>
+    <item name="id_tag_autolayout_margin" type="id"></item>
+    <item name="lovepanda_zhibo" type="id"></item>
+    <item name="lovepanda_zhuangti" type="id"></item>
+    <item name="glide_tag_id" type="id"/>
+
+
+    <item name="gridview" type="id"/>
+    <item name="webview" type="id"/>
+    <item name="scrollview" type="id"/>
+    <item name="main_tab_root" type="id"/>
+    <item name="main_tab_navigation_img" type="id"/>
+    <item name="home" type="id"/>
+    <item name="title" type="id"/>
+    <item name="action_bar_activity_content" type="id"/>
+    <item name="action_menu_divider" type="id"/>
+    <item name="action_menu_presenter" type="id"/>
+    <item name="chatting_checkbox" type="id"/>
+    <item name="chatting_content_area" type="id"/>
+    <item name="chatting_maskview" type="id"/>
+    <item name="content" type="id"/>
+    <item name="day_view_adapter_class" type="id"/>
+
+
+    <item name="decode" type="id" />
+    <item name="decode_failed" type="id" />
+    <item name="decode_succeeded" type="id" />
+    <item name="restart_preview" type="id" />
+    <item name="quit" type="id" />
+    <item name="return_scan_result" type="id" />
+
+    <item name="detail_behavior_content_padding_done" type="id" />
+
+    <item name="recycle_tag" type="id" />
+</resources>

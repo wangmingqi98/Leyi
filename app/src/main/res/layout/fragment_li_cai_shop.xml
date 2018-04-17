@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.leyi.view.fragment.LiCaiShopFragment"
+    android:id="@+id/licai"
+    android:background="#ff7830"
+    android:orientation="vertical">
+
+    <!--标题栏-->
+    <RelativeLayout
+        android:id="@+id/title_zixun"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="#ff7830"
+        >
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/my_tab"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tabIndicatorHeight="0dp"
+            app:tabTextColor="#a34b1d"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="#fff"
+            >
+
+        </android.support.design.widget.TabLayout>
+
+
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:background="#EfEfEf"
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+
+
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="#fff"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="#FF8257">
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+              <TextView
+                  android:padding="20dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="#fff"
+                  android:textSize="16sp"
+                  android:text="适用范围"
+                  />
+              <TextView
+                  android:id="@+id/danbi"
+                  android:paddingBottom="10dp"
+                  android:paddingLeft="20dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="#fff"
+                  android:textSize="16sp"
+                  android:text="单笔投资满200.00元"
+                  />
+              <TextView
+                  android:id="@+id/touziqixian"
+                  android:paddingBottom="10dp"
+                  android:paddingLeft="20dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="#fff"
+                  android:textSize="16sp"
+                  android:text="投资期限满1月"
+                  />
+          </LinearLayout>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"/>
+
+          <LinearLayout
+              android:layout_gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+              <TextView
+                  android:id="@+id/money"
+                  android:padding="20dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="#7b2212"
+                  android:textSize="22sp"
+                  android:text="13.16%"
+
+                  />
+              <TextView
+                  android:id="@+id/name"
+                  android:paddingBottom="10dp"
+                  android:paddingLeft="20dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="#fff"
+                  android:textSize="16sp"
+                  android:text="年化收益"
+                  />
+
+          </LinearLayout>
+
+      </LinearLayout>
+
+        <!--<com.leyi.weight.WaveView2-->
+            <!--android:id="@+id/wv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="-20dp"-->
+            <!--/>-->
+            <yyydjk.com.library.CouponView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/couponView"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#F5Bc9f"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:cv_dash_line_color="@android:color/white"
+                app:cv_dash_line_gap="5dp"
+                app:cv_dash_line_height="0.8dp"
+                app:cv_dash_line_length="10dp"
+                app:cv_dash_line_margin_bottom="5dp"
+                app:cv_dash_line_margin_left="5dp"
+                app:cv_dash_line_margin_right="5dp"
+                app:cv_dash_line_margin_top="8dp"
+                app:cv_is_dash_line_bottom="true"
+                app:cv_is_dash_line_left="true"
+                app:cv_is_dash_line_right="true"
+                app:cv_is_dash_line_top="false"
+                app:cv_is_semicircle_bottom="true"
+                app:cv_is_semicircle_left="false"
+                app:cv_is_semicircle_right="false"
+                app:cv_is_semicircle_top="false"
+                app:cv_semicircle_color="@android:color/white"
+                app:cv_semicircle_gap="4dp"
+                app:cv_semicircle_radius="4dp">
+            </yyydjk.com.library.CouponView>
+        <LinearLayout
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_margin="10dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/qizhi"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="16sp"
+                    android:text="有效期至：2018-02-16"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/youxaioqi"
+                    android:gravity="center"
+                   android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="16sp"
+                    android:text="剩余30天过期"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

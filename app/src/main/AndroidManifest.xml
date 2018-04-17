@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.leyi">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="com.ysd.keepcar.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 用于进行网络定位 -->
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- 该特性group用于访问系统硬件相机与相机自动对焦功能，比如发布照片动弹，扫描二维码时需要 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="乐毅金服"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppBaseTheme">
+        <meta-data
+            android:name="design_width"
+            android:value="1080" />
+        <meta-data
+            android:name="design_height"
+            android:value="1920" />
+
+        <activity android:name=".view.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fuiou.mobile.activity.FyWebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".view.activity.RegisterActivity" />
+        <activity android:name=".view.activity.LoginActivity" />
+        <activity android:name=".view.activity.RePsdActivity" />
+        <activity android:name=".view.activity.CompanyNewsActivity" />
+        <activity android:name=".view.activity.ActiveActivity" />
+        <activity android:name=".view.activity.AboutUsActivity" />
+        <activity android:name=".view.activity.HelpActivity" />
+        <activity android:name=".view.activity.SafeActivity" />
+        <activity android:name=".view.activity.TradingrecordActivity" />
+        <activity android:name=".view.activity.MyTouziActivity" />
+        <activity android:name=".view.activity.MyAddActivity" />
+        <activity android:name=".view.activity.MyRedPackActivity" />
+        <activity
+            android:name=".view.activity.WithdrawDepositctivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".view.activity.ChongzhiActivity" />
+        <activity android:name=".view.activity.BindBankCardActivity" />
+        <activity android:name=".view.activity.LimtActivity" />
+        <activity android:name=".view.activity.SetingActivity" />
+        <activity android:name=".view.activity.PhoneMaActivity" />
+        <activity android:name=".view.activity.RePhoneActivity" />
+        <activity android:name=".view.activity.BackMoneyActivity" />
+        <activity android:name=".view.activity.YouBiaoActivity" />
+        <activity android:name=".view.activity.DrawPsdActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.drawsp" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".lock.CreateGestureActivity" />
+        <activity android:name=".lock.UnlockGestureActivity" />
+        <activity android:name=".view.activity.TouBiaoMoneyActivity" />
+        <activity android:name=".view.activity.OkOrderActivity" />
+        <activity android:name=".view.activity.SetPayPsdActivity" />
+        <activity android:name=".view.activity.TotalZChActivity" />
+        <activity android:name=".view.activity.TrurhNameActivity" />
+        <activity android:name=".view.activity.PayResultActivity" />
+        <activity android:name=".view.activity.BanlListActivity" />
+        <activity android:name=".view.activity.BannerShowActivity"></activity>
+    </application>
+
+</manifest>

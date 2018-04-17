@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="#fff"
+    tools:context="com.leyi.view.activity.AboutUsActivity">
+
+    <RelativeLayout
+        android:id="@+id/title_zixun"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="#ff7830">
+
+        <ImageView
+            android:id="@+id/zhuce_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/zuo_bai"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关于我们"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:text="   乐毅理财（leyilc.com）隶属于北京文轩荣欣投资咨询有限公司，是由国企投资入股的智能化财富管理平台。依托大数据、云计算、人工智能等前沿科技不断优化传统的金融服务模式，为有投融资需求的客户打造便捷、安全、高效的资金融通渠道，满足双方的投融资需求。
+   乐毅理财致力于为投资人提供安全、有保障措施、高收益的互联网投资服务，平台三证齐全（ICP证、ICP备案、公安部门备案），拥有完整的产品、研发、风控、财务以及客服等职能体系，通过结合全球金融发展与互联网技术创新，在健全的风险管控体系基础上，为中小企业及个人客户提供专业、可信赖的投融资服务，帮助他们实现便捷高效的低成本融资和财富增值。此外，乐毅理财还组建了一支在金融、互联网、法律等多个领域具备丰富管理和业务经验的精英团队，不断向国内一流的高安全级别互联网投融资服务平台迈进。"/>
+
+</LinearLayout>
