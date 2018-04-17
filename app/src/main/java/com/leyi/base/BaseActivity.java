@@ -40,6 +40,7 @@ import java.lang.reflect.Method;
 
 /**
  * Created by Administrator on 2017/12/26.
+ * Activity基类
  */
 
 public abstract class BaseActivity extends AutoLayoutActivity {
