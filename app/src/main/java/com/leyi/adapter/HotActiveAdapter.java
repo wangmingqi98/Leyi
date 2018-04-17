@@ -9,6 +9,7 @@ import android.widget.BaseAdapter;
 import com.leyi.R;
 
 /**
+ * 热门活动
  * Created by Administrator on 2018/3/7.
  */
 

@@ -19,6 +19,7 @@ import com.leyi.util.DialogUtils;
 
 /**
  * Created by Administrator on 2017/12/26.
+ * fragment基类
  */
 
 public abstract class BaseFragment  extends Fragment {
