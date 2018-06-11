@@ -184,6 +184,7 @@ public class B_RepaymentDetailActivity extends BaseActivity implements View.OnCl
                     @Override
                     public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
                         //点击每条数据显示到卡片上
+
                         titleCount.setText("第"+loan_list.get(position).getL_key_index()+"期收益(元)");
                         money.setText(loan_list.get(position).getMonth_need_all_repay_money_format());
                         time.setText("还款日:"+loan_list.get(position).getRepay_day_format());
