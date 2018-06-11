@@ -3,6 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#fff"
+    android:layout_marginTop="@dimen/dp10"
     >
   <TextView
       android:id="@+id/gonggao_title"
@@ -13,36 +14,26 @@
       android:layout_marginLeft="10dp"
       android:layout_marginTop="10dp"
       android:layout_marginBottom="10dp"
-      android:text="关于圣诞、元旦活动详情公告"/>
+      android:text="公司公告"/>
 
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="14sp"-->
+        <!--android:textColor="#666666"-->
+       <!--android:layout_marginLeft="10dp"-->
+        <!--android:text="2018-03"/>-->
     <TextView
+        android:id="@+id/content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="14sp"
         android:textColor="#666666"
-       android:layout_marginLeft="10dp"
-        android:text="2018-03"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:textColor="#666666"
-android:layout_marginLeft="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:text="尊敬的用户："/>
-    <TextView
-        android:id="@+id/gonggao_contenr"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:textColor="#666666"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:singleLine="true"
-        android:ellipsize="end"
-        android:text="您好:"/>
+
     <View
         android:background="#e5e5e5"
         android:layout_width="match_parent"
@@ -69,7 +60,7 @@ android:layout_marginLeft="10dp"
         android:layout_weight="1"/>
 
     <ImageView
-android:layout_marginRight="10dp"
+        android:layout_marginRight="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

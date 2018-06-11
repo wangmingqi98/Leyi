@@ -144,7 +144,7 @@
         android:layout_height="8.0dip"
         android:layout_weight="1.0" />
 
-    <com.leyi.lock.LockPatternView
+    <com.leyijf.lock.LockPatternView
         android:id="@+id/gesturepwd_create_lockview"
         android:layout_width="288.0dip"
         android:layout_height="288.0dip"

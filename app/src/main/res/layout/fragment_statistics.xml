@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.leyi.view.fragment.totalzchfragment.StatisticsFragment">
+    tools:context="com.leyijf.view.fragment.totalzchfragment.StatisticsFragment">
 
     <LinearLayout
 
@@ -95,12 +95,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
 
-        <ImageView
-            android:layout_gravity="center"
-            android:padding="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/xiangxia"/>
+        <!--<ImageView-->
+            <!--android:layout_gravity="center"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/xiangxia"/>-->
 
     </LinearLayout>
     <View
@@ -125,15 +125,23 @@
     <LinearLayout
         android:id="@+id/has_internet_lin"
         android:background="#fff"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <ListView
-
+        <android.support.v7.widget.RecyclerView
             android:divider="#f3f3f3"
             android:dividerHeight="2px"
             android:id="@+id/shouyi_list"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></ListView>
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/no_data"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/no_data"/>
+
     </LinearLayout>
 
 </LinearLayout>

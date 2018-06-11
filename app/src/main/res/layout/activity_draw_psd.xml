@@ -8,7 +8,7 @@
     android:clipToPadding="true"
     android:orientation="vertical"
     android:background="#fff"
-    tools:context="com.leyi.view.activity.DrawPsdActivity">
+    tools:context="com.leyijf.view.activity.DrawPsdActivity">
 <TextView
     android:id="@+id/shoushi_zuoshang_tv"
     android:padding="10dp"
@@ -32,7 +32,7 @@ android:id="@+id/lin"
 
 
 
-        <com.leyi.weight.RoundImageView
+        <com.leyijf.weight.RoundImageView
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -59,7 +59,7 @@ android:id="@+id/lin"
             android:textColor="#ff7380" />
     </LinearLayout>
 
-    <com.leyi.weight.grsture.CustomLockView
+    <com.leyijf.weight.grsture.CustomLockView
         android:id="@+id/lv_lock"
         android:layout_below="@+id/lin"
         android:layout_width="match_parent"

@@ -5,20 +5,11 @@
     android:background="#fff"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
 
-
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="投标名称（全称）"
-            android:textColor="#222222"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:textSize="14sp"
-            />
     <TextView
         android:paddingTop="20dp"
         android:paddingBottom="10dp"
@@ -37,18 +28,19 @@
         android:textColor="#ff7830"/>
 
 
-    <com.leyi.weight.CustomizedProgressBar
+    <com.leyijf.weight.CustomizedProgressBar
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:id="@+id/progress"
         android:layout_width="match_parent"
-        android:layout_height="10dp"
+        android:layout_height="5dp"
         app:currentcount="50"
         android:layout_marginTop="20dp"
         android:layout_centerInParent="true"/>
     <LinearLayout
         android:layout_marginBottom="10dp"
         android:orientation="horizontal"
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -141,5 +133,35 @@
         </LinearLayout>
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lingdang"
+            android:layout_margin="10dp"
+            />
+        <com.leyijf.weight.MarqueeView
+            android:id="@+id/marqueeview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_marqueeview"
+            app:textSizess="13sp"
+            app:textColors="#666"
+            app:paddingLefts="10dp"
+            app:paddingTopBottoms="10dp"
+            app:startDelayTimes="1000"
+            app:reRepeatDelayTimes="2000"
+            app:itemAnimationTimes="1400"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
 
+
+    </LinearLayout>
+</LinearLayout>
 </LinearLayout>

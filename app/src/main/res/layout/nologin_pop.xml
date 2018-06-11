@@ -3,65 +3,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#36000000"
-
     android:orientation="vertical">
 
-    <LinearLayout
-        android:paddingTop="50dp"
-        android:layout_width="match_parent"
+    <RelativeLayout
+        android:layout_marginTop="70dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:orientation="vertical">
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/nologinbg"
+        >
 
-        <ImageView
-            android:id="@+id/popup_close2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:src="@drawable/popup_close2" />
-
-        <RelativeLayout
+        <Button
+            android:id="@+id/pop_know"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
-                android:id="@+id/lin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/pop_back"
-                android:orientation="vertical"
-                android:paddingBottom="50dp">
-
-                <ImageView
-                    android:id="@+id/popup_icon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/popup_icon" />
-                <TextView
-                    android:id="@+id/pop_kq"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"
-                    android:text="您还未登录，请先登录"
-                    android:textSize="20sp" />
-
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/pop_know"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/lin"
-                android:layout_centerHorizontal="true"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="-30dp"
-                android:textColor="#fff"
-                android:background="@drawable/btn_shape"
-                android:text="登录" />
-        </RelativeLayout>
-    </LinearLayout>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_shape"
+            android:text="登录"
+            android:textColor="#fff" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/close"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_close"/>
 </LinearLayout>

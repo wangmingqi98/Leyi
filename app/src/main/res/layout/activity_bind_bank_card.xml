@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#f3f3f3"
     android:orientation="vertical"
-    tools:context="com.leyi.view.activity.BindBankCardActivity"
+    tools:context="com.leyijf.view.activity.BindBankCardActivity"
     android:fitsSystemWindows="true"
     android:clipToPadding="true">
 
@@ -40,7 +40,7 @@
         android:paddingLeft="10dp"
         android:paddingBottom="5dp"
         android:paddingTop="5dp"
-android:textColor="#999"
+        android:textColor="#999"
         android:text="请绑定持卡人为您本人的银行储蓄卡"/>
 
 
@@ -87,52 +87,7 @@ android:textColor="#999"
         android:background="#d7d7d7"
         ></View>
 
-    <LinearLayout
-        android:id="@+id/selector_bank_lin"
-        android:background="#fff"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
 
-
-        >
-        <TextView
-            android:paddingRight="10dp"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="选择银行"
-            android:textColor="#222222"
-            android:textSize="16sp"
-
-            />
-        <TextView
-            android:layout_weight="3"
-            android:text="查看银行列表"
-            android:textSize="14sp"
-            android:textColor="#999"
-            android:layout_gravity="center"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-
-            android:id="@+id/selector_bank"
-            />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/xiangqing"/>
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2px"
-        android:background="#d7d7d7"
-        ></View>
     <LinearLayout
         android:background="#fff"
         android:orientation="horizontal"

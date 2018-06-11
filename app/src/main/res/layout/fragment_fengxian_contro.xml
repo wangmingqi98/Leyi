@@ -1,30 +1,60 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.leyi.view.fragment.fragment_touzi.FengxianControFragment">
-  <LinearLayout
+    tools:context="com.leyijf.view.fragment.fragment_touzi.FengxianControFragment">
+  <RelativeLayout
+
       android:orientation="vertical"
       android:layout_width="match_parent"
       android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+      <TextView
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:text="还款日期"
+          android:gravity="center"
+          android:layout_height="wrap_content" />
+      <TextView
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:text="已还本息"
+          android:layout_height="wrap_content" />
+      <TextView
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:text="待还本息"
+          android:layout_height="wrap_content" />
+      <TextView
+          android:layout_width="0dp"
+          android:text="状态"
+          android:gravity="center"
+          android:layout_weight="1"
+          android:layout_height="wrap_content" />
+    </LinearLayout>
     <View
+        android:id="@+id/view"
+        android:layout_below="@+id/layout"
         android:layout_width="match_parent"
         android:background="#f3f3f3"
-        android:layout_height="5dp"/>
-<TextView
-    android:background="#fff"
-    android:paddingRight="10dp"
-    android:paddingLeft="10dp"
-    android:paddingTop="20dp"
-    android:paddingBottom="20dp"
-    android:id="@+id/fengxian"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:textSize="14sp"
-    android:textColor="#666666"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_height="1px"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/view"
+        android:layout_marginTop="@dimen/dp5"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
 
-    android:text="风险控制风险控制风险控制风险控制风险控制风险控制风险控制风险控制风险控制风险控制风险控制风险控制风险控制风险控制风险控制风险控制风险控制风险控制风险控制风险控制风险控制风险控制风险控制风险控制风险控制风险控制风险控制风险控制"
-    />
-  </LinearLayout>
+  </RelativeLayout>
 
-</FrameLayout>
+</RelativeLayout>

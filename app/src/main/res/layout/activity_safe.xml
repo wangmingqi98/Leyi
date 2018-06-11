@@ -8,7 +8,7 @@
        android:background="@drawable/safe_bj"
     android:fitsSystemWindows="true"
     android:clipToPadding="true"
-    tools:context="com.leyi.view.activity.SafeActivity">
+    tools:context="com.leyijf.view.activity.SafeActivity">
 
 
     <RelativeLayout

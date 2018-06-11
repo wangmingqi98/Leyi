@@ -92,11 +92,6 @@
 
             </LinearLayout>
 
-            <!--<com.leyi.weight.WaveView2-->
-            <!--android:id="@+id/wv"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="-20dp"-->
-            <!--/>-->
             <yyydjk.com.library.CouponView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/couponView"

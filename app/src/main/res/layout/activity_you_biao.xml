@@ -6,10 +6,9 @@
     android:layout_height="match_parent"
     android:background="#f3f3f3"
     android:orientation="vertical"
-    tools:context="com.leyi.view.activity.YouBiaoActivity"
+    tools:context="com.leyijf.view.activity.YouBiaoActivity"
     android:fitsSystemWindows="true"
     android:clipToPadding="true">
-
     <RelativeLayout
         android:id="@+id/title_zixun"
         android:layout_width="match_parent"
@@ -34,59 +33,354 @@
 
 
     </RelativeLayout>
-    <ListView
-        android:id="@+id/toubiao"
+    <com.leyijf.weight.CustomScrollView
         android:layout_below="@+id/title_zixun"
-        android:background="#fff"
+        android:layout_width="fill_parent"
+        android:fillViewport="true"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#f3f3f3"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></ListView>
+        android:layout_height="match_parent">
 
-   <!--<WebView-->
-       <!--android:id="@+id/web"-->
-    <!--android:layout_below="@+id/title_zixun"-->
-       <!--android:layout_width="match_parent"-->
-       <!--android:layout_height="match_parent">-->
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
 
-   <!--</WebView>-->
+        <TextView
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="——年化收益——"
+            android:textColor="#ff7830"/>
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="15.00%"
+            android:textSize="28sp"
+            android:textColor="#ff7830"/>
+
+
+        <com.leyijf.weight.CustomizedProgressBar
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            app:currentcount="50"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/need_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="50.789"
+                    android:textColor="#222222"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="可投金额" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="2px"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="#d7d7d7"></View>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/repay_time"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3月"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#222222"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投资期限"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="2px"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="#d7d7d7"></View>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/min_loan_money"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100元"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#222222"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="起投金额"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <ImageView
+                android:id="@+id/alarm"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lingdang"
+                />
+            <com.leyijf.weight.MarqueeView
+                android:id="@+id/marqueeview"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/alarm"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_marqueeview"
+                app:textSizess="12sp"
+                app:textColors="#666"
+                app:paddingLefts="10dp"
+                app:paddingTopBottoms="10dp"
+                app:startDelayTimes="1000"
+                app:reRepeatDelayTimes="2000"
+                app:itemAnimationTimes="1400"
+                />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
     <View
         android:layout_above="@+id/dibu_btn"
         android:layout_width="match_parent"
         android:background="#999999"
         android:layout_height="1px"/>
 
-<LinearLayout
-    android:id="@+id/dibu_btn"
-    android:layout_alignParentBottom="true"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/jisuan"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:src="@drawable/tbxq_jisuanqi"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
 
-        />
-    <TextView
-        android:id="@+id/get_price"
-        android:layout_width="0dp"
-        android:layout_weight="8"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:background="#ff7830"
-        android:textColor="#ffffff"
-        android:text="立即投资"
-        android:gravity="center"
-        />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="项目金额"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+
+            <TextView
+
+                android:id="@+id/need_money2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="¥2543.00"
+                android:textColor="#222222"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:text="起息方式"
+                android:textSize="12sp"
+                />
+            <TextView
+
+                android:id="@+id/nianlilv"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:textColor="#222222"
+                android:text="T(成交日+1)"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:text="截止投标"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:id="@+id/jiezhi_date"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:textColor="#222222"
+                android:text="3个月"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:text="还款方式"
+                android:textSize="12sp"
+                />
+            <TextView
+
+                android:id="@+id/loantype_format"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:textColor="#222222"
+                android:text="¥0.00"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout_myindent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:tabBackground="@drawable/tab_backg"
+            app:tabIndicatorColor="#fe9900"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="#ff7830"
+            app:tabTextColor="#000"></android.support.design.widget.TabLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="#f3f3f3"
+            android:layout_height="5dp">
+
+        </View>
+
+        <com.leyijf.weight.CustomViewpager
+            android:id="@+id/viewpager_myindent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
 </LinearLayout>
+    </com.leyijf.weight.CustomScrollView>
+    <LinearLayout
+        android:id="@+id/dibu_btn"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+        <ImageView
+            android:id="@+id/jisuan"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/tbxq_jisuanqi"
+
+            />
+        <TextView
+            android:id="@+id/get_price"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:textSize="16sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="#ff7830"
+            android:textColor="#ffffff"
+            android:text="立即投资"
+            android:gravity="center"
+            />
+    </LinearLayout>
 </RelativeLayout>
 
 

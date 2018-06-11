@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#f3f3f3"
     android:orientation="vertical"
-    tools:context="com.leyi.view.activity.TouBiaoMoneyActivity"
+    tools:context="com.leyijf.view.activity.TouBiaoMoneyActivity"
     android:fitsSystemWindows="true"
     android:clipToPadding="true">
 
@@ -57,7 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="500000元"
+            android:text=""
             android:textColor="#999"
             android:textSize="14sp" />
 
@@ -87,11 +87,11 @@
             android:layout_weight="1"/>
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/remain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="300000元" />
+            android:text="" />
 
     </LinearLayout>
     <View
@@ -114,22 +114,9 @@
             android:textColor="#999"
             android:textSize="14sp" />
 
-        <TextView
-            android:id="@+id/canuse_money"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="10dp"
-            android:text="0.00"
-            android:textColor="#222222"
-            android:textSize="16sp" />
 
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2px"
-        android:background="#d7d7d7"></View>
 
 
     <LinearLayout
@@ -161,6 +148,7 @@
             android:textSize="14sp"
             android:textColor="#999"
             android:layout_gravity="center"
+            android:inputType="number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@null"
@@ -177,7 +165,6 @@
             android:text="余额全投"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
-
             android:paddingLeft="5dp"
             android:textColor="#ff7830" />
     </LinearLayout>
@@ -200,7 +187,7 @@
             android:textColor="#999"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="可用余额：50000元"/>
+            android:text=""/>
 
 
 
@@ -215,28 +202,23 @@
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginTop="40dp"
-
         android:background="@drawable/btn_shape"
         android:gravity="center"
         android:paddingBottom="10dp"
         android:paddingTop="10dp"
-
         android:text="确认"
         android:textColor="#fff" />
     <TextView
         android:id="@+id/next_stepqian"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginTop="60dp"
-
         android:background="@drawable/btn_shapeff88"
         android:gravity="center"
         android:paddingBottom="10dp"
         android:paddingTop="10dp"
-
         android:text="确认"
         android:textColor="#fff" />
 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!--这里的 AppUpdate 要与你设置的下载目录一致-->
+    <external-path
+        name="app_update"
+    path="AppUpdate" />
+</paths>

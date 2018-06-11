@@ -25,7 +25,7 @@
             android:src="@drawable/lingdang"
             android:layout_margin="10dp"
             />
-        <com.leyi.weight.MarqueeView
+        <com.leyijf.weight.MarqueeView
             android:id="@+id/marqueeview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -44,19 +44,19 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
 
-        <TextView
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="详情"
-            android:textColor="#999"
-            />
-        <ImageView
-            android:layout_margin="10dp"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/xiangqing"
+        <!--<TextView-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="详情"-->
+            <!--android:textColor="#999"-->
+            <!--/>-->
+        <!--<ImageView-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/xiangqing"-->
             />
     </LinearLayout>
 

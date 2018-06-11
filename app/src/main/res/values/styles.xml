@@ -17,6 +17,7 @@
 
 
     </style>
+    <style name="NoTitleBarTheme" parent="android:Theme.Light.NoTitleBar"></style>
     <!-- 沉浸式4 -->
     <style name="App.Theme.Transparent" parent="@style/AppBaseTheme">
         <item name="android:windowBackground">@color/white</item>
@@ -285,6 +286,55 @@
         <item name="android:layout_width">60dp</item>
         <item name="android:layout_height">28dp</item>
         <item name="android:text">详情</item>
+    </style>
+        <!--底部弹框动画-->
+    <style name="AnimBottom_leyi" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+
+    </style>
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+    <!-- 边框 -->
+    <item name="android:windowFrame">@null</item>
+    <!-- 是否浮现在activity之上 -->
+    <item name="android:windowIsFloating">true</item>
+    <!-- 半透明 -->
+    <item name="android:windowIsTranslucent">true</item>
+    <!-- 无标题 -->
+    <item name="android:windowNoTitle">true</item>
+    <!-- 背景透明 -->
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <!-- 模糊 -->
+    <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <!--更新对话框的样式-->
+    <style name="DialogActivity" parent="Theme.AppCompat">
+        <!--对话框背景 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!--没有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否浮现在Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!--背景透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否有覆盖 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--背景变暗-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <!--对话框的样式-->
+    <style name="UpdateDialog" parent="DialogActivity">
+        <!--背景变暗-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="Button" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#ff895b</item>
+        <item name="colorButtonNormal">#ff895b</item>
     </style>
 
 </resources>

@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:fitsSystemWindows="true"
     android:clipToPadding="true"
-    tools:context="com.leyi.view.activity.RePhoneActivity">
+    tools:context="com.leyijf.view.activity.RePhoneActivity">
     <RelativeLayout
         android:id="@+id/title_zixun"
         android:layout_width="match_parent"
@@ -200,19 +200,16 @@
 
 
         <TextView
-            android:id="@+id/yanzheng_ok"
-
+            android:id="@+id/sure"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:layout_marginTop="60dp"
-
             android:background="@drawable/btn_shape"
             android:gravity="center"
             android:paddingBottom="10dp"
             android:paddingTop="10dp"
-
             android:text="确定"
             android:textColor="#fff" />
 
@@ -275,19 +272,16 @@
 
 
         <TextView
-            android:id="@+id/huoqu_yanzheng"
-
+            android:id="@+id/getcode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:layout_marginTop="60dp"
-
             android:background="@drawable/btn_shape"
             android:gravity="center"
             android:paddingBottom="10dp"
             android:paddingTop="10dp"
-
             android:text="获取验证码"
             android:textColor="#fff" />
 

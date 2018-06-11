@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.leyi.view.fragment.mytouzi_fragment.AlLiuFragment">
+    tools:context="com.leyijf.view.fragment.mytouzi_fragment.AlLiuFragment">
 
     <ListView
         android:divider="#f3f3f3"

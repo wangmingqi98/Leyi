@@ -4,7 +4,7 @@
    android:background="#ff7830"
     android:id="@+id/more"
     android:layout_height="match_parent"
-    tools:context="com.leyi.view.fragment.MoreFragment"
+    tools:context="com.leyijf.view.fragment.MoreFragment"
     android:orientation="vertical">
     <!--标题栏-->
     <RelativeLayout

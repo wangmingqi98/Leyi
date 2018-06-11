@@ -8,7 +8,7 @@
 
     android:fitsSystemWindows="true"
     android:clipToPadding="true"
-    tools:context="com.leyi.view.activity.HelpActivity">
+    tools:context="com.leyijf.view.activity.HelpActivity">
 
     <RelativeLayout
         android:id="@+id/title_zixun"
@@ -71,11 +71,11 @@
                 android:drawableTop="@drawable/help_two"
                 />
 
-            <RadioButton
-                android:id="@+id/rbTab3"
-                style="@style/TabBtn"
-                android:drawableTop="@drawable/help_three"
-                />
+            <!--<RadioButton-->
+                <!--android:id="@+id/rbTab3"-->
+                <!--style="@style/TabBtn"-->
+                <!--android:drawableTop="@drawable/help_three"-->
+                <!--/>-->
 
             <RadioButton
                 android:id="@+id/rbTab4"

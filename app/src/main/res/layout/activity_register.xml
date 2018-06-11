@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.leyi.view.activity.RegisterActivity"
+    tools:context="com.leyijf.view.activity.RegisterActivity"
     android:fitsSystemWindows="true"
     android:clipToPadding="true">
 

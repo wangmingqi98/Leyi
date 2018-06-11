@@ -8,7 +8,7 @@
     android:fitsSystemWindows="true"
     android:clipToPadding="true"
     android:background="#fff"
-    tools:context="com.leyi.view.activity.AboutUsActivity">
+    tools:context="com.leyijf.view.activity.AboutUsActivity">
 
     <RelativeLayout
         android:id="@+id/title_zixun"

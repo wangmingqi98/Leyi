@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:background="#fff"
 
-    tools:context="com.leyi.view.fragment.helpfragment.Q6Fragment">
+    tools:context="com.leyijf.view.fragment.helpfragment.Q6Fragment">
 
     <ListView
         android:id="@+id/qlist"

@@ -5,10 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
     android:fitsSystemWindows="true"
     android:clipToPadding="true"
-    tools:context="com.leyi.view.activity.ActiveActivity">
+    tools:context="com.leyijf.view.activity.ActiveActivity">
     <RelativeLayout
         android:id="@+id/title_zixun"
         android:layout_width="match_parent"
@@ -33,12 +32,21 @@
 
 
     </RelativeLayout>
-    <ListView
-        android:id="@+id/hot_active"
+    <!--<com.scwang.smartrefresh.layout.SmartRefreshLayout-->
+        <!--android:id="@+id/layout_active"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<com.scwang.smartrefresh.layout.header.ClassicsHeader-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
 
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/hot_active"
 
-    </ListView>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    <!--</com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
 
 </LinearLayout>

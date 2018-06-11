@@ -5,7 +5,7 @@
 
     android:background="#f3f3f3"
     android:id="@+id/smart"
-    tools:context="com.leyi.view.fragment.licaishop_fragment.NoviceFragment">
+    tools:context="com.leyijf.view.fragment.licaishop_fragment.NoviceFragment">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -52,13 +52,13 @@
         </View>
 
 
-        <ListView
+        <android.support.v7.widget.RecyclerView
 
             android:id="@+id/novice_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:divider="#f3f3f3"
-            android:dividerHeight="20dp"></ListView>
+            android:dividerHeight="20dp"></android.support.v7.widget.RecyclerView>
     </LinearLayout>
 
 </com.scwang.smartrefresh.layout.SmartRefreshLayout>

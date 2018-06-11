@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:id="@+id/smart"
     android:background="#efefef"
-    tools:context="com.leyi.view.fragment.HomeFragment">
+    tools:context="com.leyijf.view.fragment.HomeFragment">
 
   <ListView
 
@@ -12,14 +12,7 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:divider="#f3f3f3"
-      android:dividerHeight="20dp"></ListView>
-  <TextView
-      android:layout_width="match_parent"
-      android:layout_height="130px"
-      android:gravity="center"
-      android:background="#f3f3f3"
-      android:textColor="#999"
-      android:text="账户资金安全由富友第三方平台保障"/>
+      android:dividerHeight="10dp"></ListView>
 
 
 

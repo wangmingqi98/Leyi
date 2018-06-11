@@ -5,7 +5,7 @@
 
     android:background="#f3f3f3"
     android:id="@+id/smart"
-    tools:context="com.leyi.view.fragment.licaishop_fragment.SupplylinkFragment">
+    tools:context="com.leyijf.view.fragment.licaishop_fragment.SupplylinkFragment">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"

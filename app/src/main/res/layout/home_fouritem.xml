@@ -147,7 +147,7 @@
 
 
 
-    <com.leyi.weight.CustomizedProgressBar
+    <com.leyijf.weight.CustomizedProgressBar
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:id="@+id/progress"

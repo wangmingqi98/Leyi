@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="#fff"
+    android:layout_marginTop="@dimen/dp10"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,26 +23,7 @@
             android:text="聚优财1025"
             android:textSize="18sp" />
 
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/red_bank"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/shouye_baoxianfenqi" />
-            <ImageView
-                android:visibility="gone"
-                android:id="@+id/yellow_bank"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:src="@drawable/shouyedaididai"
-                />
 
             <TextView
                 android:id="@+id/project"
@@ -50,10 +32,12 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
-                android:text="保险名分期"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="货抵贷"
+                android:background="@drawable/shouyedaididai"
                 android:textColor="#fff"
                 android:textSize="12sp" />
-        </FrameLayout>
     </LinearLayout>
 
     <View
@@ -161,12 +145,12 @@
 
 
 
-    <com.leyi.weight.CustomizedProgressBar
+    <com.leyijf.weight.CustomizedProgressBar
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:id="@+id/progress"
         android:layout_width="match_parent"
-        android:layout_height="10dp"
+        android:layout_height="5dp"
         app:currentcount="50"
         android:layout_marginTop="20dp"
         android:layout_centerInParent="true"/>
@@ -179,7 +163,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="可投金额："/>
+            android:text="剩余可投金额："/>
 
         <TextView
 
@@ -214,21 +198,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
-        <TextView
-            android:visibility="gone"
-            android:id="@+id/banck_money"
-            android:layout_weight="3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
 
-            android:background="@drawable/hui_btn_shape"
-            android:gravity="center"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp"
-
-            android:text="还款中"
-            android:textColor="#fff" />
         <TextView
 
             android:id="@+id/now_repay"

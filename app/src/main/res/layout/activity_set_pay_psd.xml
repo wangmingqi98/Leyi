@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.leyi.view.activity.SetPayPsdActivity"
+    tools:context="com.leyijf.view.activity.SetPayPsdActivity"
     android:fitsSystemWindows="true"
     android:clipToPadding="true">
 
@@ -50,6 +50,7 @@
             android:gravity="center"
             android:paddingBottom="5dp"
             android:paddingTop="5dp"
+            android:visibility="gone"
             android:text="短信验证已发送至130****3698，请注意查收" />
 
         <LinearLayout
@@ -74,7 +75,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@null"
-                android:id="@+id/yanzheng_edit"
+                android:id="@+id/inputcode"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -82,11 +83,12 @@
                 android:layout_weight="1"/>
 
             <TextView
-                android:id="@+id/dao_time"
+                android:id="@+id/time"
+                android:visibility="gone"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="53s"
+                android:text="60s"
                 android:layout_marginRight="50dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
@@ -95,8 +97,8 @@
                 android:textColor="#fff"
                 android:background="@drawable/fang_shape"/>
             <TextView
-                android:visibility="gone"
-                android:id="@+id/huoqu"
+                android:visibility="visible"
+                android:id="@+id/get"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -319,59 +321,6 @@
 
 
         </LinearLayout>
-
-
-    </LinearLayout>
-    <LinearLayout
-
-        android:visibility="gone"
-        android:id="@+id/shehzi_ok"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-
-
-            <ImageView
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/chenggong"
-                android:layout_margin="20dp"
-                />
-
-            <TextView
-
-                android:layout_gravity="center"
-                android:text="设置交易密码成功"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-              />
-
-
-
-
-
-
-
-
-
-        <TextView
-            android:id="@+id/wancheng"
-            android:layout_gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginTop="60dp"
-
-            android:background="@drawable/btn_shape"
-            android:gravity="center"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp"
-
-            android:text="完成"
-            android:textColor="#fff" />
 
 
     </LinearLayout>

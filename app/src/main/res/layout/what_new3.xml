@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/loading3" />
+    <Button
+        android:id="@+id/what_new_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_navigatonpage"
+        android:text="立即使用"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="35dp"/>
+
+</RelativeLayout>

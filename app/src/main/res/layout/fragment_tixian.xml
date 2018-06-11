@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/smart"
-    tools:context="com.leyi.view.fragment.tradcordfragment.TixianFragment">
+    tools:context="com.leyijf.view.fragment.tradcordfragment.TixianFragment">
 
     <ListView
         android:id="@+id/indent_list"

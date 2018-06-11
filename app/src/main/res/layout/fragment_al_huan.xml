@@ -2,16 +2,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.leyi.view.fragment.mytouzi_fragment.AlHuanFragment"
+    tools:context="com.leyijf.view.fragment.mytouzi_fragment.AlHuanFragment"
 >
 
-    <ListView
+    <android.support.v7.widget.RecyclerView
         android:divider="#f3f3f3"
         android:id="@+id/indent_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:dividerHeight="10dp">
 
-    </ListView>
+    </android.support.v7.widget.RecyclerView>
 
 </FrameLayout>

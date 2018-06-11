@@ -37,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="2px"
         android:background="#d7d7d7"></View>
-    <com.leyi.weight.PasswordInputView
+    <com.leyijf.weight.PasswordInputView
         android:id="@+id/input_view"
         android:layout_margin="20dp"
         android:layout_width="match_parent"
@@ -57,7 +57,7 @@
             android:layout_weight="1"/>
 
     <TextView
-        android:id="@+id/wnagji_mima"
+        android:id="@+id/forgetpwd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
@@ -73,19 +73,19 @@
         android:background="#000000"
         ></View>
 
-    <com.leyi.weight.PasswordKeyboardView
+    <com.leyijf.weight.PasswordKeyboardView
         android:id="@+id/keybordview"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="#b0b0b0"
-    android:focusable="true"
-    android:focusableInTouchMode="true"
-    android:keyBackground="@color/white"
-    android:keyTextColor="#000000"
-    android:shadowColor="#00000000"
-    android:shadowRadius="0"
-    app:pkvDeleteBackgroundColor="#d2d2d2"
-    app:pkvDeleteDrawable="@drawable/close" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#b0b0b0"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@color/white"
+        android:keyTextColor="#000000"
+        android:shadowColor="#00000000"
+        android:shadowRadius="0"
+        app:pkvDeleteBackgroundColor="#d2d2d2"
+        app:pkvDeleteDrawable="@drawable/keyboard_backspace" />
 
 
 

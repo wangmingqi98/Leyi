@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#f3f3f3"
     android:orientation="vertical"
-    tools:context="com.leyi.view.activity.LimtActivity"
+    tools:context="com.leyijf.view.activity.LimtActivity"
     android:fitsSystemWindows="true"
     android:clipToPadding="true">
 

@@ -7,7 +7,7 @@
     android:background="#fff"
     android:orientation="vertical"
 
-    tools:context="com.leyi.view.activity.PhoneMaActivity"
+    tools:context="com.leyijf.view.activity.PhoneMaActivity"
     android:fitsSystemWindows="true"
     android:clipToPadding="true">
 
@@ -54,7 +54,6 @@
            />
             <TextView
                 android:id="@+id/bind_shouji"
-
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -73,15 +72,12 @@
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="40dp"
                 android:layout_marginTop="40dp"
-
                 android:background="@drawable/btn_shape"
                 android:gravity="center"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
-
                 android:text="更换绑定手机"
                 android:textColor="#fff" />
-
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 

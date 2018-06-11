@@ -1,18 +1,27 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.leyi.view.fragment.mytouzi_fragment.QuanBuFragment"
+    android:id="@+id/refreshlayout"
+    android:background="@color/background"
+    tools:context="com.leyijf.view.fragment.mytouzi_fragment.QuanBuFragment"
   >
-
-    <ListView
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
         android:id="@+id/indent_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:dividerHeight="10dp"
-        android:divider="#f3f3f3"
+        android:layout_height="match_parent"
         >
 
-    </ListView>
-
-</FrameLayout>
+    </android.support.v7.widget.RecyclerView>
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/no_data"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/no_data"/>
+</RelativeLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

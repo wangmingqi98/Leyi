@@ -8,11 +8,6 @@
     android:id="@+id/mains"
     >
 
-
-
-
-
-
     <FrameLayout
         android:id="@+id/flHomeContent"
         android:layout_width="match_parent"
@@ -25,8 +20,6 @@
 <View
     android:id="@+id/xian"
     android:layout_above="@+id/ieMainBottom"
-
-
     android:layout_width="match_parent"
     android:layout_height="2px"
     android:background="#d7d7d7"></View>

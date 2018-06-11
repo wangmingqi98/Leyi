@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    tools:context=".view.activity.MyTouziActivity">
+    <RelativeLayout
+        android:id="@+id/title_zixun"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="#ff7830">
+
+        <ImageView
+            android:id="@+id/zhuce_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/zuo_bai"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="还款详情"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/title_zixun"
+        android:id="@+id/recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/layout_immediately"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/immediately_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_shape"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="立即还款"
+            android:textColor="#fff" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/immediately_money"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/available_balance"
+            android:text="可用余额￥1,095,114.98"
+            android:textSize="@dimen/sp12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/top_up"
+            android:layout_alignTop="@+id/available_balance"
+            android:layout_below="@+id/immediately_money"
+            android:layout_marginLeft="15dp"
+            android:text="充值"
+            android:textSize="14sp"
+            android:textColor="#ff7830"
+            android:layout_toRightOf="@+id/available_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -8,7 +8,7 @@
     android:background="#f3f3f3"
     android:fitsSystemWindows="true"
     android:clipToPadding="true"
-    tools:context="com.leyi.view.activity.PayResultActivity">
+    tools:context="com.leyijf.view.activity.PayResultActivity">
     <RelativeLayout
         android:id="@+id/title_zixun"
         android:layout_width="match_parent"

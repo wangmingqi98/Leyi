@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.leyi.view.fragment.fragment_touzi.TouziRenshuFragment">
+    tools:context="com.leyijf.view.fragment.fragment_touzi.TouziRenshuFragment">
 
  <LinearLayout
      android:orientation="vertical"
@@ -12,12 +12,12 @@
       android:layout_width="match_parent"
       android:background="#f3f3f3"
       android:layout_height="5dp"/>
-  <ListView
+  <android.support.v7.widget.RecyclerView
       android:dividerHeight="2px"
       android:divider="#d7d7d7"
       android:id="@+id/renshulist"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"></ListView>
+      android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
  </LinearLayout>
 
 </FrameLayout>

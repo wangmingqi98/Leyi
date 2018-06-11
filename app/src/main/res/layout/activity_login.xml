@@ -8,7 +8,7 @@
     android:fitsSystemWindows="true"
     android:clipToPadding="true"
     android:background="#fff"
-    tools:context="com.leyi.view.activity.LoginActivity">
+    tools:context="com.leyijf.view.activity.LoginActivity">
 
     <RelativeLayout
         android:id="@+id/title_zixun"
@@ -162,7 +162,6 @@
 
         <TextView
             android:id="@+id/ok_login"
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"

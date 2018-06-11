@@ -317,4 +317,11 @@
     <!--自定义进度条渐变颜色-->
     <color name="progress_color_1">#ff7830</color>
     <color name="progress_color_2">#ffa94c</color>
+
+    <!--弹框-->
+    <color name="background">#f4f4f4</color>
+    <color name="line_color_gray">#d7d7d7</color>
+    <color name="color_line">#dddddd</color>
+    <color name="invitation_background">#f75e67</color>
+    <color name="progressbar_frontcolor">#ffcdb5</color>
 </resources>
